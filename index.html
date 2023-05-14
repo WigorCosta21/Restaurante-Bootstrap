@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante do Bairro</title>
+  <script>document.documentElement.className += ' js'</script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./assets/lib/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Foots -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header id="header" class="navbar navbar-expand-lg sticky-top p-4">
+    <div class="container">
+      <h1 class="navbar-brand fw-bold fs-2">Restaurante do bairro</h1>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="navbar-collapse collapse justify-content-end" id="menu-navigation">
+        <ul class="nav navbar-nav nav-pills d-md-flex">
+          <li class="nav-item fw-bold">
+            <a class="nav-link" href="#our-story">
+              Nossa história
+            </a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a class="nav-link" href="#todays-special">
+              Especiais do dia
+            </a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a class="nav-link" href="#gallery">
+              Galeria
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div data-bs-spy="scroll" data-bs-target="#header" data-bs-smooth-scroll="true">
+    <section id="our-story">
+      <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./assets/img/slides/slide-1.jpg" alt="Foto do espaço interno do restaurante">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./assets/img/slides/slide-2.jpg" alt="Dias taças de vinho">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./assets/img/slides/slide-3.jpg" alt="Uma mesa com comida">
+          </div>
+        </div>
+        <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active">
+          </button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1">
+          </button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2">
+          </button>
+        </div>
+      </div>
+
+      <div class="pt-4 pb-4 js-scroll">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="row">
+                <div class="col-md-6 mt-3">
+                  <img src="./assets/img/restaurante.jpg" class="d-block w-100 mb-2" alt="Restaurante">
+                  <img src="./assets/img/bebida.jpg" class="d-block w-100" alt="Bebida">
+                </div>
+                <div class="col-md-6 ">
+                  <img src="./assets/img/prato.jpg" class="d-block w-100 mb-2" alt="Prato">
+                  <img src="./assets/img/sobremesa.jpg" class="d-block w-100" alt="Sobremesa">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <h2 class="section-title mb-4">Nossa história</h2>
+              <p>Bem-vindos ao Restaurante do Bairro, um local que oferece uma experiência gastronômica única e inesquecível. Nosso restaurante é o resultado de anos de pesquisa e desenvolvimento, e foi criado para atender aos clientes mais exigentes e sofisticados.</p>
+              <p>Nosso objetivo é criar uma experiência única de culinária que celebre a vida marinha e promova uma conexão com a natureza. Temos um forte compromisso com a sustentabilidade e somos parceiros de diversas organizações que trabalham para preservar o meio ambiente e os oceanos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="todays-special" class="js-scroll">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title text-center mb-4">Especiais do Dia</h2>
+          <div class="col-md-4">
+            <img src="./assets/img/especial/prato-especial.jpg" class="d-block w-100 rounded-top" alt="">
+            <div class="card-special p-3 rounded-botton">
+              <h3 class="fs-5 pb-2">Prato especial do dia</h3>
+              <span><i class="bi bi-clock"></i> 10min</span>
+              <div class="d-flex pt-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/img/especial/prato-especial-1.jpg" class="d-block w-100 rounded-top" alt="">
+            <div class="card-special p-3 rounded-botton">
+              <h3 class="fs-5 pb-2">Prato especial do dia</h3>
+              <span><i class="bi bi-clock"></i> 10min</span>
+              <div class="d-flex pt-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/img/especial/prato-especial-2.jpg" class="d-block w-100 rounded-top" alt="">
+            <div class="card-special p-3 rounded-botton">
+              <h3 class="fs-5 pb-2">Prato especial do dia</h3>
+              <span><i class="bi bi-clock"></i> 10min</span>
+              <div class="d-flex pt-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="js-scroll">
+      <div class="container">
+        <div class="row">
+          <h2 class="section-title text-center mb-4 mt-4">Galeria</h2>
+          <div class="col-md-4">
+            <img src="./assets/img/galeria/galeria-1.jpg" class="d-block w-100 img-fluid" alt="">
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-12">
+                <img src="./assets/img/galeria/galeria-2.jpg" class="d-block w-100 img-fluid" alt="">
+              </div>
+              <div class="col-12">
+                <img src="./assets/img/galeria/galeria-3.jpg" class="d-block w-100 img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/img/galeria/galeria-1.jpg" class="d-block w-100 img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-5 p-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h2 class="section-title fs-3">Restaurante do Bairro</h2>
+          </div>
+          <div class="col-md-2 d-flex flex-column footer-text gap-4 mt-5 mt-md-0">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twiter</a>
+          </div>
+          <div class="col-md-2 d-flex flex-column footer-text gap-4 mt-5 mt-md-0">
+            <a href="#">Menu</a>
+            <a href="#">Reserva</a>
+            <a href="#">Galeria</a>
+          </div>
+          <div class="col-md-5 d-flex flex-column footer-text gap-4 mt-5 mt-md-0">
+            <a href="#">Fale Conosco</a>
+            <p>Seja o primeiro a receber nossa newsletter</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Digite seu e-mail">
+              <span class="input-group-text text-colored" id="basic-addon2">se inscrever</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./assets/lib/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
